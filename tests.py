@@ -7,5 +7,5 @@ class MyTestCase(unittest.TestCase):
         upper_name = to_upper(name)
         self.assertEqual(upper_name, "TONY")
 
-if _name__ == '_main_':
+if __name__ == '_main_':
     unittest.main()

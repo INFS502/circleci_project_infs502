@@ -4,7 +4,7 @@ def to_upper(name):
 def say_hello(name):
     print(f'Hello, {name}')
 
-if _name__ == '_main_':
+if __name__ == '_main_':
     name = 'Tony'
     say_hello(name)
     up = to_upper(name)
