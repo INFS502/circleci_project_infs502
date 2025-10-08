@@ -8,18 +8,18 @@ jobs:
       - run: python main.py
   test:
     docker:
-      - image:cimg/python:3.11
+      - image: cimg/python:3.11
     steps:
       - checkout
-      - run:python tests.py
+      - run: python tests.py
 
 workflows:
   build_application:
     jobs:
       - build
       - test:
-        reuires:
+        requires:
           - build
         filters:
-        branches:
-          only:main
+          branches:
+            only: main
